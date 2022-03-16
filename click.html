@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Click counter</title>
+</head>
+<body>
+<div style="user-select: none;text-align: center;font-size: 200px">0</div>
+<script>
+	var i = 0;
+	window.onclick = function(){
+		i++;
+		let elm = document.querySelector("div");
+		elm.innerHTML = i;
+	}
+	document.body.onkeyup = function(e){
+		if(e.keyCode == 32){
+			i++;
+			let elm = document.querySelector("div");
+			elm.innerHTML = i;
+		}
+	}
+</script>
+</body>
+</html>
